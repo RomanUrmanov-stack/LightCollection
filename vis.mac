@@ -1,0 +1,22 @@
+/vis/open OGL 600x600-0+0
+
+/vis/drawVolume
+
+/vis/scene/add/axes 0 0 0 15 mm
+/vis/scene/add/trajectories smooth
+
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/zoom 1
+/vis/viewer/set/hiddenEdge 0
+/vis/viewer/set/style w
+
+/vis/geometry/set/visibility World 0 false
+/vis/geometry/set/colour Crystal 1 1 1 0 1
+/vis/geometry/set/colour Teflon 1 1 1 1 0.3
+/vis/geometry/set/colour Window 1 0.8 0.1 0.1 0.6
+
+#/vis/viewer/flush
